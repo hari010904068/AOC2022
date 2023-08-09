@@ -12,11 +12,12 @@ f = open("input.txt")
 #     print(max(list(map(sum, [list(map(int, x.split("\n"))) for x in f.read().rstrip("\n").split("\n\n")]))))
 
 t=0
-x=open("input.txt", "r").read().split("\n\n")
+x=open("in.txt", "r").read().split("\n\n")
 print(x)
-x.splitlines()
+
 
 for i in x:
     t=max(t,sum([int(r) for r in i.splitlines()]))
+
 
 print(t)
